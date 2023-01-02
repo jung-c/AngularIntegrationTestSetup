@@ -1,3 +1,5 @@
+using AngularIntegrationTestSetup.DI;
+
 namespace AngularIntegrationTestSetup.Main;
 
 public class Program
@@ -9,10 +11,6 @@ public class Program
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-                webBuilder.UseSetting(WebHostDefaults.ApplicationKey, typeof(Startup).Assembly.GetName().Name);
-                webBuilder.UseStartup<Startup>();
-            });
+            .ConfigureWebHostDefaults(Startup.ConfigureWebHostBuilder<Program>);
 
 }

@@ -1,4 +1,11 @@
-namespace AngularIntegrationTestSetup.Main;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+
+namespace AngularIntegrationTestSetup.DI;
 
 public class Startup
 {
@@ -7,6 +14,12 @@ public class Startup
     public Startup(IConfiguration configuration)
     {
         _configuration = configuration;
+    }
+
+    public static void ConfigureWebHostBuilder<TEntrypoint>(IWebHostBuilder webBuilder)
+    {
+        webBuilder.UseStartup<Startup>();
+        webBuilder.UseSetting(WebHostDefaults.ApplicationKey, typeof(TEntrypoint).Assembly.GetName().Name);
     }
 
     public virtual void ConfigureServices(IServiceCollection services)

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularIntegrationTestSetup
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularIntegrationTestSetup.IntegrationTests", "AngularIntegrationTestSetup.IntegrationTests\AngularIntegrationTestSetup.IntegrationTests.csproj", "{ED5980C1-72EC-416E-BAD5-4A9D82C273A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularIntegrationTestSetup.DI", "AngularIntegrationTestSetup.DI\AngularIntegrationTestSetup.DI.csproj", "{8B7F9F15-107C-44CF-8919-78189E360DBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{ED5980C1-72EC-416E-BAD5-4A9D82C273A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5980C1-72EC-416E-BAD5-4A9D82C273A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5980C1-72EC-416E-BAD5-4A9D82C273A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7F9F15-107C-44CF-8919-78189E360DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7F9F15-107C-44CF-8919-78189E360DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7F9F15-107C-44CF-8919-78189E360DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7F9F15-107C-44CF-8919-78189E360DBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,3 +1,4 @@
+using AngularIntegrationTestSetup.DI;
 using AngularIntegrationTestSetup.Main;
 using Microsoft.AspNetCore.Mvc.Testing;
 
